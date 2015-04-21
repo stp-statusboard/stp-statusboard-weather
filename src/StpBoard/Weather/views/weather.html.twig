@@ -1,0 +1,20 @@
+<style>
+    .weather .city {
+        font-size: 30px;
+    }
+
+    .weather .weatherIcon {
+        font-size: 160px;
+    }
+
+    .weather .temp {
+        font-size: 30px;
+    }
+</style>
+<div class="boardContent weather">
+    <div class="city">{{ city }}</div>
+    <div class="weatherIcon">
+        <i class="wi {{ icon }}"></i>
+    </div>
+    <div class="temp">{{ temperature }} &deg;C</div>
+</div>

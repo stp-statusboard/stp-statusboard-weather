@@ -1,0 +1,21 @@
+{
+  "name": "stp-statusboard/stp-statusboard-weather",
+  "description": "Weather widget for stp-statusboard",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michal Plachta",
+      "email": "michal.plachta@schibsted.pl"
+    }
+  ],
+  "require": {
+    "silex/silex": "1.2.*",
+    "stp-statusboard/stp-statusboard-base": "0.*",
+    "cmfcmf/openweathermap-php-api": "2.0.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "StpBoard\\Weather\\": "src"
+    }
+  }
+}
