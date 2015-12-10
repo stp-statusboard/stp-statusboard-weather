@@ -43,9 +43,11 @@ class WeatherControllerProvider implements ControllerProviderInterface, BoardPro
                     return $this->twig->render('error.html.twig');
                 }
 
+                $appId = $request->get('appId', '');
+
                 $openWeatherMap = new OpenWeatherMap();
                 try {
-                    $weather = $openWeatherMap->getWeather($city, 'metric');
+                    $weather = $openWeatherMap->getWeather($city, 'metric', 'en', $appId);
                 } catch (\Exception $e) {
                     return $this->twig->render('error.html.twig');
                 }

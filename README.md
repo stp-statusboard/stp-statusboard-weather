@@ -10,4 +10,7 @@
   width: 4
   params:
     city: Cracow
+    appId: APP_ID
 ```
+
+APP_ID is optional. OpenWeatherMap API has some limits for number of requests, you can use api key to omit this limit
